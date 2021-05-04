@@ -12,7 +12,7 @@ buildscript{
 }
 apply plugin: 'java'
 apply plugin: 'eclipse'
-apply plugin: 'org.srpingframework.boot'
+apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 group 'com.sep.book'
@@ -23,6 +23,7 @@ repositories {
     mavenCentral()
 }
 dependencies {
-    compile('org.srpingframework.boot:spring-boot-starter-web')
-    testCompile('org.srpingframework.boot:spring-boot-starter-test')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.projectlombok:lombok')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
 }
